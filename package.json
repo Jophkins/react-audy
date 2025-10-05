@@ -12,6 +12,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "mobx": "^6.15.0",
     "mobx-react-observer": "^1.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
