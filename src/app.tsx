@@ -1,13 +1,10 @@
-import { useState } from "react";
-
 import reactLogo from "./assets/react.svg";
-
-import viteLogo from "/vite.svg";
+import { musicPlayStore } from "./store/store";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+import viteLogo from "/vite.svg";
 
+function App() {
   return (
     <>
       <div>
@@ -20,10 +17,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount(count => count + 1)} type="button">
-          count is
+        <button onClick={() => musicPlayStore.play("Track 1")} type="button">
+          {musicPlayStore.isPlaying ? "Playing" : "Play"}
           {" "}
-          {count}
+          Track 1
         </button>
         <p>
           Edit
