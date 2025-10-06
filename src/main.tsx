@@ -3,9 +3,13 @@ import { createRoot } from "react-dom/client";
 
 import "./index.css";
 import App from "./app.tsx";
+import Layout from "./components/layout/layout.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <Layout>
+      <App />
+
+    </Layout>
   </StrictMode>,
 );
