@@ -1,18 +1,19 @@
 import type { PropsWithChildren } from "react";
 
 import { LeftSidebar } from "./left-sidebar/left-sidebar";
+import { RightSidebar } from "./right-sidebar/right-sidebar";
 
 export default function Layout({ children }: PropsWithChildren<unknown>) {
   return (
-    <div>
+    <div className="min-h-screen h-full grid grid-cols-[1fr_4fr_1.2fr]">
 
       <LeftSidebar />
 
-      <main>
+      <main className="p-layout">
 
         {children}
       </main>
-      {/* <RightSidebar /> */}
+      <RightSidebar />
 
     </div>
   );
