@@ -14,7 +14,7 @@ export function Menu({ items, title }: Props) {
           <li key={item.name}>
             <a className="flex gap-3 items-center mb-5 group" href="#">
               {item.icon && <item.icon className="group-hover:text-primary duration-300 font-medium" />}
-              <span>{item.name}</span>
+              <span className="group-hover:text-primary duration-300 font-medium">{item.name}</span>
             </a>
           </li>
         ))}
