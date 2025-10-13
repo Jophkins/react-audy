@@ -1,13 +1,26 @@
 .lyrics {
   div {
-    @apply text-primary font-medium mb-5;
+    font-weight: 500;
+    margin: 1.25rem 0;
+    color: var(--color-primary);
   }
 
-  // > p {
+  > p {
+    opacity: 0.65;
+    position: relative;
+    line-height: 2;
+    margin-bottom: 0.3rem;
 
-  // }
+    .icon {
+      position: absolute;
+      left: -1rem;
+      top: 0.7rem;
+      color: var(--color-primary);
+    }
 
-  // &.active {
-
-  // }
+    &.active {
+      opacity: 1;
+      font-weight: 500;
+    }
+  }
 }

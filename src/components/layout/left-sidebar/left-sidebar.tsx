@@ -4,7 +4,7 @@ import { Menu } from "./menu";
 
 export function LeftSidebar() {
   return (
-    <aside className="p-layout border-r border-bg-secondary h-full">
+    <aside className="px-layout border-r border-bg-secondary h-full py-9">
 
       <Menu items={MENU_ITEMS} />
 
